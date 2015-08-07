@@ -1,9 +1,12 @@
 package com.example.android.myappportfolio;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,4 +37,53 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+    public void streamerToast(View view) {
+        Context context = getApplicationContext();
+        CharSequence text = "This button will launch my streamer app!";
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
+    }
+    public void scoresToast(View view) {
+        Context context = getApplicationContext();
+        CharSequence text = "This button will launch my Scores app!";
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
+    }
+    public void libraryToast(View view) {
+        Context context = getApplicationContext();
+        CharSequence text = "This button will launch my Library app!";
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
+    }
+    public void buildItToast(View view) {
+        Context context = getApplicationContext();
+        CharSequence text = "This button will launch my Build it Bigger app!";
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
+    }
+    public void readerToast(View view) {
+        Context context = getApplicationContext();
+        CharSequence text = "This button will launch my XYZ Reader app!";
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
+    }
+    public void capstoneToast(View view) {
+        Context context = getApplicationContext();
+        CharSequence text = "This button will launch my capstone app!";
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
+    }
+
 }
